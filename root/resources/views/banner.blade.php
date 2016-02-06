@@ -1,0 +1,1 @@
+<img src="{{ asset('root/resources/assets/images/banner.png') }}" alt="" class="img-responsive"/>

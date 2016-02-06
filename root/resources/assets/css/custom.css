@@ -1,0 +1,250 @@
+/**
+* Custom Style Sheet
+* Author: smartrahat
+* Email: smartrahat@gmail.com
+* Date:2015.09.04 Time:06:18AM
+*/
+
+body{
+    background: url("http://localhost/zamzam/root/resources/assets/images/light-tile.gif");
+}
+
+.main{
+    background-color: #e8e8e8;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: 10px 10px 10px 5px #888888;
+    -moz-box-shadow:  10px 10px 10px 5px #888888;
+    -o-box-shadow:  10px 10px 10px 5px #888888;
+    box-shadow:  1px 1px 10px 10px #888888;
+}
+
+/*================================
+    Image Attributes Starts
+==================================*/
+.img-responsive{
+    width: 100%;
+}
+.img-center{
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+/*================================
+    Image Attributes Ends
+==================================*/
+/*================================
+        Employee Table Starts
+==================================*/
+.table-employee th{
+    background: -webkit-gradient(linear, left top, left bottom, from(#bfbfbf), to(#9f9f9f));
+    background: -webkit-linear-gradient(top, #bfbfbf, #9f9f9f);
+    background: -moz-linear-gradient(top, #bfbfbf, #9f9f9f);
+    background: -ms-linear-gradient(top, #bfbfbf, #9f9f9f);
+    background: -o-linear-gradient(top, #bfbfbf, #9f9f9f);
+    text-align: center;
+    color: #080808;
+}
+.table-employee td{
+    /*text-align: center;*/
+    font-family: "Georgia", Times, serif;
+    /*font-weight: bold;*/
+    color: #333333;
+}
+.table-employee tr:nth-child(odd){
+    background-color: #cfcfcf;
+    color: #333333;
+}
+.table-employee tr:nth-child(even){
+    background-color: seashell;
+}
+.table-employee tr:nth-child(odd):hover,
+.table-employee tr:nth-child(even):hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#ced6df), to(#b6c6d7));
+    background: -webkit-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -moz-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -ms-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -o-linear-gradient(top, #ced6df, #b6c6d7);    color: #000;
+}
+/*================================
+        Employee Table Ends
+==================================*/
+
+/*================================
+        d-tech Starts
+==================================*/
+.d-heading{
+    background-color: #fff194;
+    color: darkgoldenrod;
+    border: 1px solid #e1d659;
+    border-radius: 4px;
+    margin: 5px 0;
+    /*margin: 5px;*/
+}
+.d-section{
+    background-color: #FFF;
+    padding: 5px;
+    margin: 5px 0;
+    /*margin: 5px;*/
+    border: 1px solid #BBB;
+    border-radius: 4px;
+}
+/*================================
+        d-tech Ends
+==================================*/
+/*================================
+        Footer Starts
+==================================*/
+footer{
+    background-color: #333333;
+    color: #6493c2;
+    text-align: center;
+}
+/*================================
+        Footer Ends
+==================================*/
+.d-scroll{
+    height: 200px;
+    overflow-x: auto;
+    border: 1px solid aliceblue;
+    margin: 5px auto;
+}
+.d-section p b a{
+   color: inherit;
+}
+
+/* List of items shown in home page which should be take care of authority */
+.list-warning{
+    max-height: 500px;
+    overflow-x: auto;
+    border: 1px solid aliceblue;
+    margin: 5px auto;
+}
+.item-warning{
+    border: 1px solid goldenrod;
+    margin: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.item-warning div{
+    padding: 5px;
+    line-height: 1em;
+}
+.item-danger{
+    border: 1px solid palevioletred;
+    margin: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #CCC;
+}
+.item-danger div{
+    padding: 5px;
+    line-height: 14px;
+}
+
+/*================================
+        Print Starts
+==================================*/
+.only-print{
+    display: none;
+}
+.only-print .signature td{
+    padding: 2em;
+}
+@media print {
+    *{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1em;
+        line-height: .9em;
+    }
+    body{
+        /*padding-top: 70px;*/
+    }
+    table tr{
+        font-size: .9em;
+        line-height: .9em;
+    }
+    .d-section{
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    .col-md-4{
+        width: 33.3333%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+    .col-md-4,
+    .col-md-12{
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .only-print{
+        display: block;
+    }
+    .no-print{
+        display: none;
+    }
+    .finger{
+        min-width: 100px;
+    }
+}
+/*================================
+        Print Ends
+==================================*/
+
+/* Transition Effects on table rows starts */
+.element{
+    float: right;
+    right: -70px;
+    padding: 5px;
+    margin: -5px;
+    position: relative;
+    /*background-color: lightgoldenrodyellow;*/
+    -webkit-transition: right .5s ease-in-out;
+    transition: right .5s ease-in-out;
+}
+.btnn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin: -5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+table tr td{
+    overflow: hidden;
+}
+table tr:hover .element{
+    right: 0;
+}
+/* Transition Effects on table rows ends */
+
+#waiting{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 5px #aaa;
+    -moz-box-shadow: 1px 1px 5px 5px #aaa;
+    box-shadow: 1px 1px 5px 5px #aaa;
+}
