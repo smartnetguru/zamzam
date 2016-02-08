@@ -82,7 +82,15 @@ class SalaryRepository {
         $basic = Salary::all()->where('eid',$eid)->pluck('basic')->first();
         $advanceDeduction = Advance::all()->where('eid',$eid)->where('effect_month',Carbon::now()->subMonth(1)->format('F Y'))->pluck('deduction_rate')->first();
         //dd($basic - 1000);
+        //$t = $basic + $this->balance($eid) - $advanceDeduction;
+        //dd($t);
         return $basic - ($advanceDeduction != null ? $advanceDeduction : 0);
+    }
+
+    public function advanceDeduction($eid)
+    {
+        $advanceDeduction = Advance::all()->where('eid',$eid)->where('effect_month',Carbon::now()->subMonth(1)->format('F Y'))->pluck('deduction_rate')->first();
+        return $advanceDeduction != null ? $advanceDeduction : 0;
     }
 
 }
