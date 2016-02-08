@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1656f045-9708-4198-a56b-15bf03c31054" name="Default" comment="" />
+    <list default="true" id="1656f045-9708-4198-a56b-15bf03c31054" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/resources/views/invoice/index.blade.php" afterPath="$PROJECT_DIR$/root/resources/views/invoice/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="zamzam.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -55,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/root/resources/views/salary/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.384615" vertical-offset="876" max-vertical-offset="1768">
+            <state vertical-scroll-proportion="0.6713533" vertical-offset="876" max-vertical-offset="1700">
               <caret line="72" column="174" selection-start-line="72" selection-start-column="174" selection-end-line="72" selection-end-column="174" />
               <folding />
             </state>
@@ -107,13 +110,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalaryController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SalaryController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/root/app/Http/Controllers/SalaryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58419245" vertical-offset="1275" max-vertical-offset="5933">
-              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state vertical-scroll-proportion="-16.346153" vertical-offset="850" max-vertical-offset="5933">
+              <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Carbon.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/root/vendor/nesbot/carbon/src/Carbon/Carbon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.884615" vertical-offset="42819" max-vertical-offset="43401">
+              <caret line="2547" column="22" selection-start-line="2547" selection-start-column="22" selection-end-line="2547" selection-end-column="22" />
+              <folding>
+                <element signature="e#7#230#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvoiceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/root/app/Http/Controllers/InvoiceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="816" max-vertical-offset="3825">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#77#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,7 +169,6 @@
         <option value="$PROJECT_DIR$/root/resources/views/employee/show.blade.php" />
         <option value="$PROJECT_DIR$/root/resources/views/cashIn/index.blade.php" />
         <option value="$PROJECT_DIR$/root/resources/views/invoice/show.blade.php" />
-        <option value="$PROJECT_DIR$/root/resources/views/invoice/index.blade.php" />
         <option value="$PROJECT_DIR$/root/resources/views/client/clientLog.blade.php" />
         <option value="$PROJECT_DIR$/root/resources/views/invoice/form.blade.php" />
         <option value="$PROJECT_DIR$/root/app/Http/Requests/InvoiceRequest.php" />
@@ -175,7 +201,6 @@
         <option value="$PROJECT_DIR$/root/resources/views/master.blade.php" />
         <option value="$PROJECT_DIR$/root/app/Http/Controllers/ClientController.php" />
         <option value="$PROJECT_DIR$/root/app/Http/Controllers/EmployeeController.php" />
-        <option value="$PROJECT_DIR$/root/app/Http/Controllers/InvoiceController.php" />
         <option value="$PROJECT_DIR$/root/app/Employee.php" />
         <option value="$PROJECT_DIR$/root/database/migrations/2016_02_02_110724_CreateAdvanceTable.php" />
         <option value="$PROJECT_DIR$/root/resources/views/salary/advance.blade.php" />
@@ -188,6 +213,8 @@
         <option value="$PROJECT_DIR$/root/resources/views/salary/edit.blade.php" />
         <option value="$PROJECT_DIR$/root/resources/views/salary/index.blade.php" />
         <option value="$PROJECT_DIR$/root/app/Http/Controllers/SalaryController.php" />
+        <option value="$PROJECT_DIR$/root/app/Http/Controllers/InvoiceController.php" />
+        <option value="$PROJECT_DIR$/root/resources/views/invoice/index.blade.php" />
       </list>
     </option>
   </component>
@@ -591,7 +618,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../school" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="helper&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php&#10;url&#9;null&#9;null&#10;HtmlServiceProv&#9;null&#9;null&#10;routecollection&#9;null&#9;null&#10;latest&#9;null&#9;null&#10;arrayObject&#9;null&#9;null&#10;select&#9;null&#9;null&#10;join&#9;null&#9;null&#10;raw&#9;null&#9;null&#10;down&#9;ACTION&#9;EditorDown&#10;route&#9;null&#9;null&#10;log&#9;ACTION&#9;LogDebugConfigure&#10;global.php&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php&#10;each&#9;null&#9;null&#10;@each&#9;null&#9;null&#10;carbon&#9;null&#9;null&#10;distinct&#9;null&#9;null&#10;groupBy&#9;null&#9;null&#10;groupb&#9;null&#9;null&#10;sum&#9;null&#9;null&#10;users&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php&#10;getvalidatorinst&#9;null&#9;null&#10;validatorins&#9;null&#9;null&#10;where&#9;null&#9;null&#10;unsigned&#9;null&#9;null&#10;sendreset&#9;null&#9;null&#10;remembertoken&#9;null&#9;null&#10;redirectTo&#9;null&#9;null&#10;redirectPath&#9;null&#9;null&#10;dotenv&#9;null&#9;null&#10;mail&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/config/mail.php&#10;datepicker&#9;null&#9;null&#10;view&#9;null&#9;null&#10;sortby&#9;null&#9;null&#10;Carbon&#9;null&#9;null&#10;session&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/symfony/http-foundation/Session/Session.php&#10;orderBy&#9;null&#9;null&#10;register&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php&#10;getLogin&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="paginate&#9;null&#9;null&#10;birthday&#9;null&#9;null&#10;helper&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php&#10;url&#9;null&#9;null&#10;HtmlServiceProv&#9;null&#9;null&#10;routecollection&#9;null&#9;null&#10;latest&#9;null&#9;null&#10;arrayObject&#9;null&#9;null&#10;select&#9;null&#9;null&#10;join&#9;null&#9;null&#10;raw&#9;null&#9;null&#10;down&#9;ACTION&#9;EditorDown&#10;route&#9;null&#9;null&#10;log&#9;ACTION&#9;LogDebugConfigure&#10;global.php&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php&#10;each&#9;null&#9;null&#10;@each&#9;null&#9;null&#10;carbon&#9;null&#9;null&#10;distinct&#9;null&#9;null&#10;groupBy&#9;null&#9;null&#10;groupb&#9;null&#9;null&#10;sum&#9;null&#9;null&#10;users&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php&#10;getvalidatorinst&#9;null&#9;null&#10;validatorins&#9;null&#9;null&#10;where&#9;null&#9;null&#10;unsigned&#9;null&#9;null&#10;sendreset&#9;null&#9;null&#10;remembertoken&#9;null&#9;null&#10;redirectTo&#9;null&#9;null&#10;redirectPath&#9;null&#9;null&#10;dotenv&#9;null&#9;null&#10;mail&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/config/mail.php&#10;datepicker&#9;null&#9;null&#10;view&#9;null&#9;null&#10;sortby&#9;null&#9;null&#10;Carbon&#9;null&#9;null&#10;session&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/symfony/http-foundation/Session/Session.php&#10;orderBy&#9;null&#9;null&#10;register&#9;FILE&#9;file://D:/xampp/htdocs/zamzam/root/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php&#10;getLogin&#9;null&#9;null" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -761,20 +788,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/root/database/migrations/2016_01_01_142833_Create_Salary_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35738832" vertical-offset="302" max-vertical-offset="884">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19572368" vertical-offset="0" max-vertical-offset="608">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/root/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
@@ -1006,6 +1019,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="9964" max-vertical-offset="12172">
           <caret line="606" column="13" selection-start-line="606" selection-start-column="13" selection-end-line="606" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,13 +1028,6 @@
         <state vertical-scroll-proportion="0.26975945" vertical-offset="81" max-vertical-offset="1632">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/resources/views/invoice/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1097,22 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/root/app/Http/Controllers/InvoiceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3672">
-          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/resources/views/salary/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.384615" vertical-offset="876" max-vertical-offset="1768">
-          <caret line="72" column="174" selection-start-line="72" selection-start-column="174" selection-end-line="72" selection-end-column="174" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/root/resources/views/salary/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
@@ -1131,13 +1122,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/root/vendor/nesbot/carbon/src/Carbon/Carbon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.884615" vertical-offset="42819" max-vertical-offset="43401">
+          <caret line="2547" column="22" selection-start-line="2547" selection-start-column="22" selection-end-line="2547" selection-end-column="22" />
+          <folding>
+            <element signature="e#7#230#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49312714" vertical-offset="3198" max-vertical-offset="21233">
+          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/resources/views/invoice/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4089347" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/app/Http/Controllers/InvoiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="816" max-vertical-offset="3825">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/root/app/Http/Controllers/SalaryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58419245" vertical-offset="1275" max-vertical-offset="5933">
-          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+        <state vertical-scroll-proportion="-16.346153" vertical-offset="850" max-vertical-offset="5933">
+          <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/resources/views/salary/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6713533" vertical-offset="876" max-vertical-offset="1700">
+          <caret line="72" column="174" selection-start-line="72" selection-start-column="174" selection-end-line="72" selection-end-column="174" />
+          <folding />
         </state>
       </provider>
     </entry>

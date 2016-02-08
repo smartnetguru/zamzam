@@ -49,7 +49,7 @@
             </table>
         </div>
     </div>
-    <div class="col-md-12 d-section text-center">{!! $invoices->render() !!}</div>
+    <div class="col-md-12 d-section text-center">{!! $invoices->appends(Input::except('page'))->render() !!}</div>
 @stop
 
 @section('script')
