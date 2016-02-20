@@ -13,6 +13,7 @@
                 <th>Position</th>
                 <th>Basic</th>
                 <th>OT Rate</th>
+                <th>Advance</th>
                 <th>Current Client</th>
             </tr>
             </thead>
@@ -24,6 +25,7 @@
                     <td>{{ $employee->designation }}</td>
                     <td align="right">{{ number_format($employee->basic) }}/=</td>
                     <td align="right">{{ $employee->ot_rate }}/=</td>
+                    <td align="right">{{ number_format($repository->isAdvance($employee->eid)) }}/=</td>
                     <td>
                         {{ $employee->client or 'No Client' }}
                         <a href="{{ action('SalaryController@create',[$employee->id]) }}" class="element btnn btn-success" role="button"><span class="glyphicon glyphicon-plus"></span></a>

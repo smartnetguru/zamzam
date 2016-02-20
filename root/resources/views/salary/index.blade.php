@@ -67,7 +67,7 @@
                     <td align="right">{{ number_format($employee->basic_amount) }}/=</td>
                     <td align="right">{{ number_format($employee->ot_amount + $employee->basic_amount) }}/=</td>
                     <td align="right">{{ number_format($repository->balance($employee->eid)) }}/=</td>
-                    <td align="right">{{ number_format(($employee->ot_amount + $employee->basic_amount)-$repository->advanceDeduction($employee->eid))}}/=</td>
+                    <td align="right">{{ number_format(($employee->ot_amount + $employee->basic_amount) - $repository->advanceDeduction($employee->eid))}}/=</td>
                     <td></td>
                     <td class="finger">
                         {!! Form::open(['action'=>['SalaryController@destroy',$employee->id],'class'=>'no-print','method'=>'delete','onsubmit'=>'return deleteConfirm()']) !!}

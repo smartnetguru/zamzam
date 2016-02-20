@@ -237,6 +237,9 @@ table tr:hover .element{
 }
 /* Transition Effects on table rows ends */
 
+/* =====================================
+          Style for Advance Salary
+   =====================================*/
 #waiting{
     display: none;
     position: absolute;
@@ -247,4 +250,18 @@ table tr:hover .element{
     -webkit-box-shadow: 1px 1px 5px 5px #aaa;
     -moz-box-shadow: 1px 1px 5px 5px #aaa;
     box-shadow: 1px 1px 5px 5px #aaa;
+}
+
+#warning{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 125%;
+    color: #e74c3c;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {opacity: 0.0;}
 }

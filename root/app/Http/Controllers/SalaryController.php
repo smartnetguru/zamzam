@@ -89,10 +89,11 @@ class SalaryController extends Controller
         $employees = DB::table('employees')
             ->leftjoin('clients','employees.cid','=','clients.id')
             ->leftjoin('salaries','employees.eid','=','salaries.eid')
-            ->select('employees.*','clients.name as client','salaries.month')
+            ->where('employees.status','!=','resign')
             ->where('month',null)
             ->orWhere('type','!=',0)
             ->distinct()
+            ->select('employees.*','clients.name as client','salaries.month')
             ->get();
         //dd($employees);
         $repository = $this->repository;
@@ -336,6 +337,20 @@ class SalaryController extends Controller
         $eid = $request->get('eid');
         $driver = Employee::all()->where('eid',$eid)->pluck('name');
         return $driver;
+    }
+
+    /**
+     * Check if already has advance
+     * Created by smartrahat Date: 2016.02.19 Time: 09:57 AM
+     * @param Request $request
+     * @return string
+     */
+    public function isAdvance(Request $request)
+    {
+        $eid = $request->get('eid');
+        $advance = Advance::all()->where('eid',$eid)->where('effect_month',Carbon::now()->subMonth(1)->format('F Y'))->pluck('total')->first();
+        $warning = $advance != null ? 'This employee already has advance' : '';
+        return $warning;
     }
 
 }

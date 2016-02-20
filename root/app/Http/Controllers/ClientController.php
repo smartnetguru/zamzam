@@ -267,7 +267,7 @@ class ClientController extends Controller
      */
     public function destroyLog($id)
     {
-        $log = Log::findOrFail($id);
+        $log = Log::query()->findOrFail($id);
         $log->delete();
         return redirect('clientLog/'.$log->cid);
     }

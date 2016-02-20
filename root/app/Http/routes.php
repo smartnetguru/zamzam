@@ -113,3 +113,4 @@ Route::delete('deleteModel/{id}','MyConfigController@destroyModel');
 Route::delete('deleteBusiness/{id}','MyConfigController@destroyBusiness');
 
 post('driver','SalaryController@driver');
+post('isAdvance','SalaryController@isAdvance');

@@ -1,4 +1,5 @@
 <div class="col-md-12 d-section">
+    <div id="warning"></div>
     <input type="hidden" name="_token" value="{{ csrf_token() }}" id="token"/>
     <div class="col-md-6"> {{-- Left hand side --}}
         <div class="form-group"> {{-- eid --}}
@@ -74,18 +75,7 @@
             {!! Form::text('rate3',null,['class'=>'form-control','id'=>'rate3']) !!}
         </div>
     </div>
-    {{--<div class="form-group"> --}}{{-- Effect Ends at --}}
-        {{--{!! Form::label('effect_to','Effect To:',['class'=>'control-label col-sm-3']) !!}--}}
-        {{--<div class="col-sm-9">--}}
-            {{--{!! Form::select('effect_to',$repository->months(),null,['class'=>'form-control']) !!}--}}
-        {{--</div>--}}
-    {{--</div>--}}
-    {{--<div class="form-group"> --}}{{-- Deduction Rate --}}
-        {{--{!! Form::label('deduction_rate','Deduce Rate:',['class'=>'control-label col-sm-3']) !!}--}}
-        {{--<div class="col-sm-9">--}}
-            {{--{!! Form::text('deduction_rate',null,['class'=>'form-control','placeholder'=>'Amount to be deduce per month']) !!}--}}
-        {{--</div>--}}
-    {{--</div>--}}
+
 </div>
 <div class="col-md-12 d-section text-center">
     {!! Form::submit('PAY',['class'=>'btn btn-success','name'=>'advance']) !!}
@@ -101,7 +91,7 @@
         /**
          * Autoload employee's name after selecting a employee id
          * Created by smartrahat Date: 2016.01.22 Time: 10:01 PM
-        */
+         */
         $(document).ready(function(){
             $('#eid').change(function(){
                 var eid = $(this).val();
@@ -122,6 +112,33 @@
             })
         });
 
+        /**
+         * Check if the employee already has advance
+         * Created by smartrahat Date: 2016.02.19 Time: 10:10 AM
+         */
+        $(document).ready(function(){
+            $('#eid').change(function(){
+                var eid = $(this).val();
+                var csrf = $('#token').val();
+                $.ajax({
+                    url : 'isAdvance',
+                    data : {eid:eid,_token:csrf},
+                    type : 'post',
+                    beforeSend:function(){
+                        $('#waiting').show()
+                    },
+                    complete:function(){
+                        $('#waiting').hide()
+                    }
+                }).success(function(e){
+                    $('#warning').html(e)
+                })
+            })
+        });
+
+        /**
+         * Calculate total advance ammount
+         */
         $(function(){
             $('#rate1,#rate2,#rate3').blur(function(){
                 var r1 = $('#rate1').val();

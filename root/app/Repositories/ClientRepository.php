@@ -89,7 +89,7 @@ class ClientRepository {
      */
     public function logDriver($id)
     {
-        return $id == 999999999 ? 'Client Driver' : ($id == 0 ? '' : Employee::FindOrFail($id)->name);
+        return $id == 999999999 ? 'Client Driver' : ($id == 0 ? '' : Employee::query()->FindOrFail($id)->name);
     }
 
     /**
