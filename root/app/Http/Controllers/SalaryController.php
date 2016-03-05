@@ -348,7 +348,11 @@ class SalaryController extends Controller
     public function isAdvance(Request $request)
     {
         $eid = $request->get('eid');
-        $advance = Advance::all()->where('eid',$eid)->where('effect_month',Carbon::now()->subMonth(1)->format('F Y'))->pluck('total')->first();
+        $advance = Advance::all()
+            ->where('eid',$eid)
+            ->where('effect_month',Carbon::now()->subMonth(1)->format('F Y'))
+            ->pluck('total')
+            ->first();
         $warning = $advance != null ? 'This employee already has advance' : '';
         return $warning;
     }
