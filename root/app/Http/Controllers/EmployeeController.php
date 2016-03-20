@@ -167,7 +167,7 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        $employee = Employee::findOrFail($id);
+        $employee = Employee::query()->findOrFail($id);
         $image = $employee->image;
         File::delete('root/resources/assets/images/employee/'.$image);
         $employee->delete();
@@ -256,7 +256,7 @@ class EmployeeController extends Controller
     public function employeeLog($id)
     {
         $title = 'Employee Log';
-        $employee = Employee::findOrFail($id);
+        $employee = Employee::query()->findOrFail($id);
         $logs = Log::where('eid',$id)->orderBy('id','desc')->orderBy('id','desc')->get();
         $repository = $this->repository;
         return view('employee.employeeLog',compact('title','logs','employee','repository'));
@@ -264,7 +264,7 @@ class EmployeeController extends Controller
 
     public function destroyLog($id)
     {
-        $log = Log::findOrFail($id);
+        $log = Log::query()->findOrFail($id);
         $log->delete();
         return redirect('employeeLog/'.$log->eid);
     }
